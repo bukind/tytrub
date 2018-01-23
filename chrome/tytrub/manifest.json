@@ -1,0 +1,10 @@
+{
+  "name": "TyTrub Extensions",
+  "description" : "Tear the tube Extension",
+  "version": "0.1",
+  "manifest_version": 1
+  "browser_action": {
+    "default_popup": "countdown.html",
+    "default_icon": "tytrub.png",
+  }
+}
