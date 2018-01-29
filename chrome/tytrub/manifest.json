@@ -7,4 +7,12 @@
     "default_popup": "countdown.html",
     "default_icon": "tytrub.png"
   }
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js: ["js/contentscript.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
 }
