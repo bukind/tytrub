@@ -1,18 +1,24 @@
 {
-  "name": "TyTrub Extensions",
-  "description" : "Tear the tube Extension",
-  "version": "0.1",
   "manifest_version": 2,
+  "name": "TyTrub Extensions",
+  "version": "0.1",
+  "default_locale": "en",
+  "description" : "Tear the tube Extension",
   "browser_action": {
-    "default_popup": "countdown.html",
+    "default_popup": "popup.html",
     "default_icon": "tytrub.png"
-  }
+  },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js: ["js/contentscript.js"],
-      "run_at": "document_start",
+      "run_at": "document_end",
       "all_frames": false
     }
+  ],
+  "permissions": [
+    "http://www.youtube.com/*",
+    "activeTab",
+    "alarms",
   ]
 }
