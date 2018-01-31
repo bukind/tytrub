@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js: ["js/contentscript.js"],
+      "js": ["page.js"],
       "run_at": "document_end",
       "all_frames": false
     }
