@@ -2,7 +2,6 @@
   "manifest_version": 2,
   "name": "TyTrub Extensions",
   "version": "0.1",
-  "default_locale": "en",
   "description" : "Tear the tube Extension",
   "browser_action": {
     "default_popup": "popup.html",
@@ -15,5 +14,5 @@
       "run_at": "document_end",
       "all_frames": false
     }
-  ],
+  ]
 }
