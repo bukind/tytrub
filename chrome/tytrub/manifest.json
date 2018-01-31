@@ -10,15 +10,10 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": ["https://*/*"],
       "js: ["js/contentscript.js"],
       "run_at": "document_end",
       "all_frames": false
     }
   ],
-  "permissions": [
-    "http://www.youtube.com/*",
-    "activeTab",
-    "alarms",
-  ]
 }
